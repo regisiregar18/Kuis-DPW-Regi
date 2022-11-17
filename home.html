@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regi Furniture</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="home.html" class="logo"> <i class="fas fa-home"></i> Regi Furniture </a>
+
+    <form action="" class="search-form">
+        <input type="search" placeholder="cari disini.." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+    </div>
+
+</header>
+
+<!-- header section ends  -->
+
+<!-- closer btn  -->
+
+<div id="closer" class="fas fa-times"></div>
+
+<!-- navbar  -->
+
+<nav class="navbar">
+    <a href="home.html">Beranda</a>
+    <a href="about.html">Tentang Kami</a>
+</nav>
+
+<!-- shopping cart  -->
+
+<div class="shopping-cart">
+
+    <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="image/product-3.jpg" alt="">
+        <div class="content">
+            <h3>Lemari Pakaian</h3>
+            <span class="quantity"> 1 </span>
+            <span class="multiply"> x </span>
+            <span class="price"> Rp.300.000 </span>
+        </div>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="image/cart-img-4.jpg" alt="">
+        <div class="content">
+            <h3>Kursi Teras</h3>
+            <span class="quantity"> 1 </span>
+            <span class="multiply"> x </span>
+            <span class="price"> Rp.100.000</span>
+        </div>
+    </div>
+
+    <h3 class="total"> total belanja : <span>Rp.400.000</span> </h3>
+
+    <a href="#" class="btn">checkout belanjaan</a>
+
+</div>
+
+<!-- login form  -->
+
+<div class="login-form">
+
+    <form action="">
+        <h3>Form login</h3>
+        <input type="email" placeholder="Masukkan email anda" class="box">
+        <input type="password" placeholder="Masukkan Password anda" class="box">
+        <div class="remember">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">remember me</label>
+        </div>
+        <input type="submit" value="login" class="btn">
+        <p>Lupa Password ? <a href="#">Klik Disini</a></p>
+        <p>Tidak Punya Akun ? <a href="#">Daftar Sekarang</a></p>
+    </form>
+
+</div>
+
+<!-- home section starts  -->
+
+<section class="home">
+
+    <div class="slides-container">
+
+        <div class="slide active">
+            <div class="content">
+                <span>Produk Baru</span>
+                <h3>Kursi Santai</h3>
+                <p>Produk Terbaru kami kali ini yaitu kursi santai yang dimana jika anda menggunakan nya ketika sedang bersantai maka akan lebih nyaman</p>
+                <a href="#" class="btn">Belanja Sekarang</a>
+            </div>
+            <div class="image">
+                <img src="image/kursigoyang.png" alt="">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <span>Produk Baru</span>
+                <h3>Kursi Gaming</h3>
+                <p>Produk terbaru dari kami kali ini yaitu Kursi Gaming , dengan desain yang keren dan warna yang keren akan membuat yang memakai akan merasa nyaman</p>
+                <a href="#" class="btn">Belanja Sekarang</a>
+            </div>
+            <div class="image">
+                <img src="image/kursigaming.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <div id="slide-next" onclick="next()" class="fas fa-angle-right"></div>
+    <div id="slide-prev" onclick="prev()" class="fas fa-angle-left"></div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- banner section starts  -->
+
+<section class="banner-container">
+
+    <div class="banner">
+        <img src="image/banner-3.jpg" alt="">
+        <div class="content">
+            <span>Limited Edition</span>
+            <h3>Diskon 50%</h3>
+            <a href="#" class="btn">Belanja Sekarang</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="image/banner-1.jpg" alt="">
+        <div class="content">
+            <span>limited edition</span>
+            <h3>diskon 50%</h3>
+            <a href="#" class="btn">belanja sekarang</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="image/banner-2.jpg" alt="">
+        <div class="content">
+            <span>limited edition</span>
+            <h3>diskon 50%</h3>
+            <a href="#" class="btn">belanja sekarang</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- banner section ends -->
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Pintasan Link</h3>
+            <a href="home.html"> <i class="fas fa-arrow-right"></i> Beranda</a>
+            <a href="about.html"> <i class="fas fa-arrow-right"></i> Tentang Kami</a>
+        </div>
+
+        <div class="box">
+            <h3>Link Sosial Media</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook</a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter</a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram</a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin</a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest</a>
+        </div>
+
+        <div class="box">
+            <h3>Kami Butuh Email Anda</h3>
+            <p>Masukkan Email Anda untuk update terbaru</p>
+            <form action="">
+                <input type="email" name="" placeholder="masukkan email anda" id="">
+                <input type="submit" value="submit" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="credit">
+    PT Regi Furniture | Modern ,  Murah , Millenial !
+</section>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+    
+</body>
+</html>
